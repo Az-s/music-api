@@ -44,5 +44,5 @@ router.post('/', upload.single('image'), (req, res) => {
         .then(result => res.send(result))
         .catch(error => res.status(400).send(error));
 });
-
+    
 module.exports = router;
